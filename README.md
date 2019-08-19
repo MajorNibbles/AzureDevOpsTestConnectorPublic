@@ -8,10 +8,14 @@ This allows a Test Automation Engineer to quickly synchronise their latest work 
  1. First install the extension from the Visual Studio market place.
  2. Once installed go to Options > Tools > Azure DevOps Test Connector
     and fill out the following settings:
-	 2a. **Azure DevOps instance URL**: *The base URL of the Azure DevOps instance you want to connect to, this can be both the legacy and new URL structure*.
-	 2b. **Comments instead of Attributes**: *If true then all test references (Plan/Suite/Case) in the Test Class will be added as comments *(e.g. //TestCaseId(123456))*. If false than the references will be added as Attributes *(e.g. [TestCaseId(123456)])*.
-	 2c. **PAT Code**: *Your Personal Access Token, found in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/pats?view=azure-devops#create-personal-access-tokens-to-authenticate-access).
-	 2d. **Test Plan/Suite/Case Attribute Name**: *What ever you set here will be used to create the Test Plan/Suite/Case Attributes or Comments. *(e.g. "TestCaseId" will result in "//TestCaseId(123456)")*.
+	 
+	 2. **Azure DevOps instance URL**: *The base URL of the Azure DevOps instance you want to connect to, this can be both the legacy and new URL structure*.
+	 
+	 2. **Comments instead of Attributes**: *If true then all test references (Plan/Suite/Case) in the Test Class will be added as comments *(e.g. //TestCaseId(123456))*. If false than the references will be added as Attributes *(e.g. [TestCaseId(123456)])*.
+	 
+	 2. **PAT Code**: *Your Personal Access Token, found in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/pats?view=azure-devops#create-personal-access-tokens-to-authenticate-access).
+	 
+	 2. **Test Plan/Suite/Case Attribute Name**: *What ever you set here will be used to create the Test Plan/Suite/Case Attributes or Comments. *(e.g. "TestCaseId" will result in "//TestCaseId(123456)")*.
  3. Navigate to your class file with Test Methods in it.
  4. Right click anywhere in the code.
  5. Select "Sync Azure DevOps Test Cases"
