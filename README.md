@@ -1,5 +1,5 @@
 # Azure DevOps Test Connector
-A Visual Studio 2019 extension  allowing users to link Test Classes with Azure DevOps Test Plans/Suites and Cases using tracking attributes or comments.
+A Visual Studio 2019 extension  allowing users to link Test Classes and SpecFlow Feature files with Azure DevOps Test Plans/Suites and Cases using tracking attributes or comments.
 
 ## Why Use it?
 This allows a Test Automation Engineer to quickly synchronise their latest work in Visual Studio with Azure DevOps, saving time by automatically creating and linking Test Plans, Test Suites (both static and requirements based) and Test Cases
@@ -17,7 +17,7 @@ This allows a Test Automation Engineer to quickly synchronise their latest work 
 	 
 	 2. **Test Plan/Suite/Case Attribute Name**: *What ever you set here will be used to create the Test Plan/Suite/Case Attributes or Comments. *(e.g. "TestCaseId" will result in "//TestCaseId(123456)")*.
  3. Navigate to your class file with Test Methods in it.
- 4. Right click anywhere in the code.
+ 4. Right click anywhere in the Test Class or Feature File.
  5. Select "Sync Azure DevOps Test Cases"
  6. If no Test Plan attribute can be found a prompt will appear for you to either enter an existing Test Plan's ID OR enter a new Test Plan's name.
  7.  If no Test Suite attribute can be found a prompt will appear for you to either enter an existing Test Suite's ID OR enter a new Test Suite's name. If a new Test Suite's name is entered a second prompt will appear asking if you want it to be [Requirements](https://docs.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops#add-a-requirement-based-test-suite-and-select-backlog-items-to-test) based, to link the new Test Suite with a requirement simply enter a Requirement WorkItem's *(e.g. Backlog Item)* ID to link it to. If this is left BLANK it will create a Static Test Suite.
