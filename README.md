@@ -27,4 +27,4 @@ This allows a Test Automation Engineer to quickly synchronise their latest work 
 ## Notes
  - Test Plan and Test Suite attributes/comments are added just above the class declaration
  - Test Case attributes/comments are added just above the Test Method signature
- - Currently only support MSTest and NUnit tests
+ - Currently supports MSTest, NUnit and SpecFlow Feature files
