@@ -22,7 +22,10 @@ This allows a Test Automation Engineer to quickly synchronise their latest work 
  6. If no Test Plan attribute can be found a prompt will appear for you to either enter an existing Test Plan's ID OR enter a new Test Plan's name.
  7.  If no Test Suite attribute can be found a prompt will appear for you to either enter an existing Test Suite's ID OR enter a new Test Suite's name. If a new Test Suite's name is entered a second prompt will appear asking if you want it to be [Requirements](https://docs.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops#add-a-requirement-based-test-suite-and-select-backlog-items-to-test) based, to link the new Test Suite with a requirement simply enter a Requirement WorkItem's *(e.g. Backlog Item)* ID to link it to. If this is left BLANK it will create a Static Test Suite.
  8. The extension will now scan the Test Class and create/update any Test Methods in Azure DevOps, linking them to the Test Suite.
- 9. Once the Creation/Updating of the Test Methods has been completed it will then add Test Plan/Suite/Case attributes or comments to the Test Class (depending on the option set in section 2b.
+ 9. Test Case names will be formatted automatically. Any capitals or underscores will be changed into spaces, E.g.
+ GivenIHaveDoneThis_ThenThisWillHappen = Given I Have Done This Then This Will Happen
+ 10. If syncing a specflow feature file the extension will also upload any test steps to the test case in Azure DevOps.
+ 11. Once the Creation/Updating of the Test Methods has been completed it will then add Test Plan/Suite/Case attributes or comments to the Test Class (depending on the option set in section 2b.
 
 ## Notes
  - Test Plan and Test Suite attributes/comments are added just above the class declaration
