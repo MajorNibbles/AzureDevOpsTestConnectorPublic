@@ -1,8 +1,9 @@
 # Azure DevOps Test Connector
 A Visual Studio 2019 extension  allowing users to link Test Classes and SpecFlow Feature files with Azure DevOps Test Plans/Suites and Cases using tracking attributes or comments.
+It syncs test case titles with your Test Solution Test Method names, as well as also syncing your SpecFlow Scenario Steps.
 
 ## Why Use it?
-This allows a Test Automation Engineer to quickly synchronise their latest work in Visual Studio with Azure DevOps, saving time by automatically creating and linking Test Plans, Test Suites (both static and requirements based) and Test Cases
+This allows a Test Automation Engineer to quickly synchronise their latest work in Visual Studio with Azure DevOps, saving time by automatically creating and linking Test Plans, Test Suites (both static and requirements based) Test Cases and Specflow Test Steps
 
 ## How to use it
  1. First install the extension from the Visual Studio market place.
