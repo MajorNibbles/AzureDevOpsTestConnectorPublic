@@ -1,0 +1,22 @@
+1.1
+-Added SpecFlow Feature File support
+-Corrected WhiteSpace before TestCase Attributes/Comments
+
+1.2
+-Corrected some bugs in Options Menu
+-Added functionality to add/update Test Steps from Specflow scenarios
+-Added further improvements to error messages
+
+1.3
+-Added option to stop updating specflow steps
+
+1.3.1
+-Correct JSON escape character bug, affecting test cases with speech-marks and backslashes
+-Correct test step mapping when updating test steps, previously it would include the test attribute/comment as the last test step
+
+1.3.2
+-Corrected SpecFlow comment symbol from '//' to '#'
+
+1.3.3
+-Removed framing [] characters from specflow file, Non-Comment references
+-Added support for <> characters in specflow test steps
