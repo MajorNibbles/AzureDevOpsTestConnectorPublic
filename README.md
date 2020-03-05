@@ -1,6 +1,7 @@
 # Azure DevOps Test Connector
 A [Visual Studio 2019 extension](https://marketplace.visualstudio.com/items?itemName=MadeUpExtensions.AzureDevopsTestConnector)  allowing users to link Test Classes and SpecFlow Feature files with Azure DevOps Test Plans/Suites and Cases using tracking attributes or comments.
 It syncs test case titles with your Test Solution Test Method names, as well as also syncing your SpecFlow Scenario Steps.
+The ADO Test Connector now also automatically [Associates automated tests between VS and ADO](https://docs.microsoft.com/en-us/azure/devops/test/associate-automated-test-with-test-case?view=azure-devops). Massively speeding up the existing VS functionality 
 
 ## Why Use it?
 This allows a Test Automation Engineer to quickly synchronise their latest work in Visual Studio with Azure DevOps, saving time by automatically creating and linking Test Plans, Test Suites (both static and requirements based) Test Cases and Specflow Test Steps
@@ -22,6 +23,7 @@ This allows a Test Automation Engineer to quickly synchronise their latest work 
  5. Select "Sync Azure DevOps Test Cases"
  6. If no Test Plan attribute can be found a prompt will appear for you to either enter an existing Test Plan's ID OR enter a new Test Plan's name.
  7.  If no Test Suite attribute can be found a prompt will appear for you to either enter an existing Test Suite's ID OR enter a new Test Suite's name. If a new Test Suite's name is entered a second prompt will appear asking if you want it to be [Requirements](https://docs.microsoft.com/en-us/azure/devops/test/create-a-test-plan?view=azure-devops#add-a-requirement-based-test-suite-and-select-backlog-items-to-test) based, to link the new Test Suite with a requirement simply enter a Requirement WorkItem's *(e.g. Backlog Item)* ID to link it to. If this is left BLANK it will create a Static Test Suite.
+ 8. A prompt will now appear asking if you would like to Automatically Associate the test case in Azure DevOps with the test solution. The entry should be the dll in which the test class is held. Leave this blank to not Associate the Test Case.
  8. The extension will now scan the Test Class and create/update any Test Methods in Azure DevOps, linking them to the Test Suite.
  9. Test Case names will be formatted automatically. Any capitals or underscores will be changed into spaces, E.g.
  GivenIHaveDoneThis_ThenThisWillHappen = Given I Have Done This Then This Will Happen
