@@ -20,3 +20,16 @@
 1.3.3
 -Removed framing [] characters from specflow file, Non-Comment references
 -Added support for <> characters in specflow test steps
+
+1.3.4
+-Added support for "DataTestMethods" tag
+
+1.4
+-Added ability to associate tests in Azure DevOps, dramatically speeding up the existing process in Visual Studio!
+-Added the correct support for "DataTestMethod" tag
+
+1.4.1
+-Improved project dll finding
+
+1.4.2
+-Fixed association testname formatting
