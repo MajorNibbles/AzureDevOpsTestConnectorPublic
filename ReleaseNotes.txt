@@ -33,3 +33,29 @@
 
 1.4.2
 -Fixed association testname formatting
+
+1.4.3
+-Improved feature file detection
+-Added support for commented out tests, both commented out specflow and cs tests will now no longer be sync'd
+
+1.4.4
+-Fixed bug with specflow and .cs file test association in ADO
+
+1.4.5
+-Fixed another bug with method name association (title casing)
+
+1.5
+-Added Scenario outline support
+
+1.5.1
+-fixed update method issue with no spaces
+
+1.5.2
+-Fixed issue with small specflow files
+
+1.5.3
+-Fixed issue with multiple test case Ids going to the wrong test method/scenario
+
+1.5.4
+-Fixed issue with incorrect casing for test case association
+-Fixed issue with & encoding for Test Steps
