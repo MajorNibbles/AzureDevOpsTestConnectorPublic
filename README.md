@@ -17,7 +17,7 @@ This allows a Test Automation Engineer to quickly synchronise their latest work 
 	 
 	 2. **PAT Code**: Your Personal Access Token, found in [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/pats?view=azure-devops#create-personal-access-tokens-to-authenticate-access).
 	 
-	 2. **Test Plan/Suite/Case Attribute Name**: *What ever you set here will be used to create the Test Plan/Suite/Case Attributes or Comments. *(e.g. "TestCaseId" will result in "//TestCaseId(123456)")*.
+	 2. **Test Plan/Suite/Case Attribute Name**: *What ever you set here will be used to create the Test Plan/Suite/Case Attributes or Comments. *(e.g. "TestCaseId(~)" will result in "//TestCaseId(123456)".. NOTE: ~ is replaced with the Test Case ID. Changing this pattern once the comment/attribute has already been created will result in parsing ignoring the existing test case!)*.
  3. Navigate to your class file with Test Methods in it.
  4. Right click anywhere in the Test Class or Feature File.
  5. Select "Sync Azure DevOps Test Cases"
